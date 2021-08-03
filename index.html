@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFUND.Marathon</title>
+    <link rel="icon" href="https://kfund.ua/wp-content/uploads/2015/11/16x16.ico" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container py-3">
+        <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+                <div class="logo">
+                    <img src="./images/KFundSchool_logo_final.png" alt="Kfund logo">
+                </div>
+            </a>
+        
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+              <a class="me-3 py-2 text-dark text-decoration-none" href="https://t.me/joinchat/vlhgKwBH0M82ZWVi">Support</a>
+              <a class="py-2 text-dark text-decoration-none" href="https://kfund.school/">About us</a>
+            </nav>
+        </header>
+        <div class="d-flex align-items-start page-content">
+            <div class="nav flex-column nav-pills me-3 navs-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <button class="tab-item nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-home"></i> Home</button>
+              <button class="tab-item nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-tasks"></i> Tasks</button>
+              <button class="tab-item nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-star-half-alt"></i> Rating</button>
+              <button class="tab-item nav-link" id="v-pills-questions-tab" data-bs-toggle="pill" data-bs-target="#v-pills-questions" type="button" role="tab" aria-controls="v-pills-questions" aria-selected="false"><i class="fas fa-question-circle"></i> FAQ</button>
+            </div>
+            <div class="tab-content tab-custom" id="v-pills-tabContent">
+              <div class="tab-pane overflow-auto fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <div class="tab-content-inner">
+                      <div class="inner-greating">
+                        <h3>Приветствую тебя!</h3>
+                        <br>
+                        <p>Раз мы уже здесь, то расскажу - что это такое и как этим пользоваться.
+                        </p>
+                        <p>Во вкладке <code>Tasks</code> тебя будут ждать задания. В нижней панели можно увидеть сколько баллов за это задание можно получить, до когда его нужно сдать, а также - уровень сложности. Задания, как я и писал в группе в телеграмме, будут появляться в 16.00, каждый понедельник. </p>
+                        <p>Во вкладке <code>Rating</code> ты можешь посмотреть свой рейтинг относительно остальных участников (он начнется проявляться по мере выполнения заданий), а также по клику на рейтинг - ты сможешь увидеть какие задания у тебя сданы/не сданы + сколько баллов за них ты получил.
+                        </p>
+                        <p>
+                          Во вкладке <code>FAQ</code> - ответы на распространенные вопросы. Если нет нужного ответа - не отчаивайся, а напиши мне и я обязательно отвечу.
+                        </p>
+                        <p>Удачи и да прибудет с тобой Сила!</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <div class="tab-content-inner">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first" type="button" role="tab" aria-controls="first" aria-selected="true">Task 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link disabled" id="second-tab" data-bs-toggle="tab" data-bs-target="#second" type="button" role="tab" aria-controls="second" aria-selected="false">Task 2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link disabled" id="third-tab" data-bs-toggle="tab" data-bs-target="#third" type="button" role="tab" aria-controls="third" aria-selected="false">Task 3</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link disabled" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth" type="button" role="tab" aria-controls="fourth" aria-selected="false">Task 4</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link disabled" id="fifth-tab" data-bs-toggle="tab" data-bs-target="#fifth" type="button" role="tab" aria-controls="fifth" aria-selected="false">Task 5</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+                            <div class="tab-content-inner">
+                                <ul class="list-group list-group-custom">
+                                  <li class="list-group-item list-group-header time-line">
+                                    <h5>ДЗ 1. Начало всех начал</h5>
+                                </li>
+                                <li class="list-group-item list-group-nav overflow-auto">
+                                  <p>
+                                    Разворачиваем рабочее окружение, разбираемся с <code>GIT</code>, а также верстаем легчайшую страничку, которую на GIT и выкладываем.
+                                  </p>
+                                    <div class="bd-callout bd-callout-warning">
+                                    Кто такие редакторы кода? VS Code vs <code>все</code>. Туториал по плагинам для VS Code 
+                                    <br>
+                                    <a href="https://www.youtube.com/watch?v=2ntJ1ETtHi8">Про плагины</a> 
+                                    <a href="https://lifehacker.ru/redaktory-koda/">Про редакторы</a>
+                                    <a href="https://code.visualstudio.com/">VS Code</a>
+                                    <br>
+                                    * Устанавливай VS Code, разбирайся с плагинами и переходи дальше
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                    <code>GIT</code> - что за зверь и как им пользоваться? Коммитить или не коммитить?
+                                    <br>
+                                    <a href="https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%9E-%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B5-%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D0%B9">Про GIT</a>
+                                    <a href="https://www.youtube.com/watch?v=zZBiln_2FhM">Практика по GIT</a>
+                                    <br>
+                                    * Устанавливай <code>GIT</code>, работай с консолью, "запушь" тестовый проект и переходи дальше
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                    Верстай <code>Task 00</code> из документа ниже и выкладывай сверстанное на <code>GIT</code>.
+                                </div>
+                                <div class="download-links">
+                                  <a href="https://drive.google.com/file/d/1psNO2Go-uBkyypqjirZeWYckxkRnheJ6/view?usp=sharing" download="">
+                                    <button type="button" class="btn btn-outline-warning">Download <i class="fas fa-download"></i></button>
+                                    <a type="button" href="https://t.me/denis_holubchikov" class="btn btn-outline-primary">Send solution <i class="fas fa-upload"></i></a>
+                                  </a>
+                                </div>
+                                </li>
+                                <li class="d-flex align-items-center list-group-item list-group-footer row">
+                                    <div class="col-8 col-md-6 time-line date-expiring"><span>Сдать до <code>12.00 7 августа</code></span></div>
+                                    <div class="col-2 col-md-2 mark-line"><button type="button" class="btn btn-warning">100 баллов</button></div>
+                                    <div class="col-2 col-md-4 difficulty">
+                                        <span class="fs-5">Difficulty:</span>
+                                        <div _ngcontent-emw-c139="" class="difficulty-line medium ng-star-inserted"><span _ngcontent-emw-c139="" class="difficulty-line__item low"></span><span _ngcontent-emw-c139="" class="difficulty-line__item medium"></span><span _ngcontent-emw-c139="" class="difficulty-line__item high"></span></div>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+                            <div class="tab-content-inner">
+                              <ul class="list-group list-group-custom">
+                                <li class="list-group-item list-group-header time-line">
+                                    <h5>ДЗ 2. Первый макет</h5>
+                                </li>
+                                <li class="list-group-item list-group-nav overflow-auto">
+                                  <p>
+                                    Рассматриваем основные CSS-свойства, смотрим на типы верстки, верстаем первый макет и не забываем про <code>GIT</code>. 
+                                  </p>
+                                    <div class="bd-callout bd-callout-warning">
+                                    Кто такой CSS? Как им пользоваться и подключать? Что на нем можно сделать?
+                                    <br>
+                                    <a href="https://webref.ru/layout/html5-css3">HTML5 и CSS3 на примерах</a> 
+                                    <a href="https://www.w3schools.com/css/default.asp">W3Schools CSS Tutorial</a>
+                                    <a href="https://www.youtube.com/watch?v=8pQKDVRc0T8&list=PLNkWIWHIRwMHUawuIEpPI_tOG7Mfhs_sA">CSS Tutorial. Zero to Hero</a>
+                                    <br>
+                                    * Разбирайся со свойствами CSS, запоминай основные и учись их применять
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                    <code>Блочная модель</code> - что за зверь и как ей пользоваться?
+                                    <br>
+                                    <a href="https://webref.ru/course/block-model">Блочная модель</a>
+                                    <a href="https://www.youtube.com/watch?v=1jvIi039-i4&list=PLNkWIWHIRwMHUawuIEpPI_tOG7Mfhs_sA&index=7">Блочная модель на практике</a>
+                                    <br>
+                                    * Больше верстай, верстай все, что видишь и с тобой прибудет дзен
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                    Верстай <code>2 макета</code> из ссылок ниже и выкладывай сверстанное на <code>GIT</code>.
+                                </div>
+                                <div class="download-links">
+                                  <a href="https://drive.google.com/file/d/18OrgR83W6r_XLrPEkxFPlklF109eGEaK/view?usp=sharing" download="">
+                                    <button type="button" class="btn btn-outline-warning">Download <i class="fas fa-download"></i></button>
+                                  </a>
+                                  <a href="https://drive.google.com/file/d/1WoEoXt6s0gWxRxzwmLAq1aiR9BEEw2Fq/view?usp=sharing" download="">
+                                    <button type="button" class="btn btn-outline-warning">Download <i class="fas fa-download"></i></button>
+                                    <a type="button" href="https://t.me/denis_holubchikov" class="btn btn-outline-primary">Send solution <i class="fas fa-upload"></i></a>
+                                  </a>
+                                </div>
+                                </li>
+                                <li class="d-flex align-items-center list-group-item list-group-footer row">
+                                    <div class="col-8 col-md-6 time-line date-expiring">
+                                      <span>Сдать до <code>12.00 5 июля</code></span>
+                                    </div>
+                                    <div class="col-2 col-md-2 mark-line">
+                                      <button type="button" class="btn btn-warning">200 баллов</button>
+                                    </div>
+                                    <div class="col-2 col-md-4 difficulty">
+                                        <span class="fs-5">Difficulty:</span>
+                                        <div _ngcontent-emw-c139="" class="difficulty-line medium ng-star-inserted"><span _ngcontent-emw-c139="" class="difficulty-line__item low"></span><span _ngcontent-emw-c139="" class="difficulty-line__item medium"></span><span _ngcontent-emw-c139="" class="difficulty-line__item high"></span></div>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+                            <div class="tab-content-inner">
+                              <ul class="list-group list-group-custom">
+                                <li class="list-group-item list-group-header time-line">
+                                    <h5>ДЗ 3. Deep CSS</h5>
+                                </li>
+                                <li class="list-group-item list-group-nav overflow-auto">
+                                  <p>
+                                    Рассматриваем псевдоэлементы с псевдоклассами, позиционирование и пр. +, безусловно, все выкладываем на <code>GIT</code>. 
+                                  </p>
+                                    <div class="bd-callout bd-callout-warning">
+                                    Рассмотреть видео с 2 по 15. Выполнить абсолютно все, что там прописано и выслать мне это одним документом.
+                                    <br>
+                                    <a href="https://www.youtube.com/watch?v=vnmfn31G988&list=PLNkWIWHIRwMHUawuIEpPI_tOG7Mfhs_sA&index=3">CSS Tutorial. Zero to Hero</a>
+                                    <br>
+                                    * Разбирайся со свойствами CSS, запоминай основные и учись их применять
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                    <code>Flexbox</code> - что за зверь и как этим пользоваться?
+                                    <br>
+                                    <a href="https://habr.com/ru/post/467049/">Flexbox</a>
+                                    <a href="https://codepen.io/enxaneta/full/adLPwv/">Flexbox шпаргалка</a>
+                                    <a href="https://flexboxfroggy.com/#ru">Flexbox игра</a>
+                                    <br>
+                                    * Присылай скрины пройденной игры
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                  <code>Figma</code> - что за зверь и как этим пользоваться?
+                                  <br>
+                                  <a href="https://tilda.education/articles-figma">Краткий гайд по Figma</a>
+                                  <a href="https://www.youtube.com/watch?v=Fhc4o_FBccU">Figma практика</a>
+                                  <br>
+                                  * Повтори сделанное в видео, после создай свой макет и присылай ссылку
+                              </div>
+                              <div class="bd-callout bd-callout-warning">
+                                <code>Верстка</code> - какая она?
+                                <br>
+                                <a href="https://www.youtube.com/watch?v=b8K_iowSriQ">Верстка ActiveBox макета</a>
+                                <br>
+                                * Повтори сделанное в первых 4 видео из этого плейлиста и присылай мне
+                            </div>
+                                <div class="bd-callout bd-callout-warning">
+                                    Верстай <code>task05</code> <a href="https://drive.google.com/drive/u/0/folders/1VfYWR-vomMylPx3cc-3As5QK46yz3z96">отсюда</a> используя flexbox и выкладывай сверстанное на <code>GIT</code>.
+                                </div>
+                                    <a type="button" href="https://t.me/denis_holubchikov" class="btn btn-outline-primary">Send solution <i class="fas fa-upload"></i></a>
+                                  </a>
+                                
+                                </li>
+                                <li class="d-flex align-items-center list-group-item list-group-footer row">
+                                    <div class="col-8 col-md-6 time-line date-expiring"><span>Сдать до <code>12.00 12 июля</code></span></div>
+                                    <div class="col-2 col-md-2 mark-line"><button type="button" class="btn btn-warning">300 баллов</button></div>
+                                    <div class="col-2 col-md-4 difficulty">
+                                        <span class="fs-5">Difficulty:</span>
+                                        <div _ngcontent-emw-c139="" class="difficulty-line medium ng-star-inserted"><span _ngcontent-emw-c139="" class="difficulty-line__item low"></span><span _ngcontent-emw-c139="" class="difficulty-line__item medium"></span><span _ngcontent-emw-c139="" class="difficulty-line__item high"></span></div>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+                            <div class="tab-content-inner">
+                              <ul class="list-group list-group-custom">
+                                <li class="list-group-item list-group-header time-line">
+                                    <h5>ДЗ 4. Верстка в студию</h5>
+                                </li>
+                                <li class="list-group-item list-group-nav overflow-auto">
+                                  <p>
+                                   <code> Эстимация.</code> Прописываем примерное время выполнение макета. Далее приступаем к выполнению. 
+                                  </p>
+                                    <div class="bd-callout bd-callout-warning">
+                                      <code> Пример эстимейта: </code> <br>
+
+                                      Настройка базовой стилизации. 1ч <br>
+                                      Структура 3ч + Если были правки по структуре 1ч <br>
+                                      Стилизация navigation 2ч <br>
+                                      Стилизация hero 1ч <br>
+                                      И так далее. <br>
+                                </div>
+                                <p>
+                                  Смотрим: сколько времени тратится на определенные куски сайта. Присылаем анализ мне. Сравниваем для себя: если вложились в эстимейт - ставим себе лайк и берем с полки пирожок, если нет - то выписываем в чем был основной "завтык".
+                                 </p>
+                                <div class="bd-callout bd-callout-warning">
+                                    На макет, по-хорошему, потратить от <b>32 до 40 часов.</b> <br>
+                                    Разбили на компоненты и реализацию различных частей сайта.
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                  elements: logo, button, title, desc <br>
+                                  components: nav, hero, section, list, card, form, container
+                                </div>
+                                <div class="download-links">
+                                  <a href="https://drive.google.com/file/d/108Ibl52WSSfFKGDSHxUm9RL8z7xWZv_g/view?usp=sharing" download="">
+                                    <button type="button" class="btn btn-outline-warning">Download <i class="fas fa-download"></i></button>
+                                  </a>
+                                </div>
+                                </li>
+                                <li class="d-flex align-items-center list-group-item list-group-footer row">
+                                    <div class="col-8 col-md-6 time-line date-expiring"><span>Сдать до <code>12.00 23 августа</code></span></div>
+                                    <div class="col-2 col-md-2 mark-line"><button type="button" class="btn btn-warning">700 баллов</button></div>
+                                    <div class="col-2 col-md-4 difficulty">
+                                        <span class="fs-5">Difficulty:</span>
+                                        <div _ngcontent-emw-c139="" class="difficulty-line medium ng-star-inserted"><span _ngcontent-emw-c139="" class="difficulty-line__item low"></span><span _ngcontent-emw-c139="" class="difficulty-line__item medium"></span><span _ngcontent-emw-c139="" class="difficulty-line__item high"></span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="fifth" role="tabpanel" aria-labelledby="fifth-tab">
+                            <div class="tab-content-inner">
+                              <ul class="list-group list-group-custom">
+                                <li class="list-group-item list-group-header time-line">
+                                    <h5>ДЗ 5. Final Round</h5>
+                                </li>
+                                <li class="list-group-item list-group-nav overflow-auto">
+                                  <p>
+                                    Ваши основные понятия: адаптивная верстка, типы и разрешения экранов, медиа-запросы. 
+                                  </p>
+                                  
+                                <div class="bd-callout bd-callout-warning">
+                                    <code>Media Queries</code> - что за зверь и как этим пользоваться?
+                                    <br>
+                                    <a href="https://www.w3schools.com/css/css3_mediaqueries_ex.asp">Media Queries</a>
+                                    <a href="https://habr.com/ru/post/349484/">Про медиа на хабре</a>
+                                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS/Media_Queries/Using_media_queries">Media Queries +1</a>
+                                    <br>
+                                </div>
+                                <div class="bd-callout bd-callout-warning">
+                                  <code>Адаптивная верстка</code> - кто она такая и как ее едят?
+                                  <br>
+                                  <a href="https://tproger.ru/translations/responsive-web-design-tips/">Краткий гайд по адаптивной верстке</a>
+                                  <a href="https://www.youtube.com/watch?v=XbnAKjjlgc4">Практика</a>
+                                  <br>
+                                  * Повтори сделанное в видео
+                              </div>
+                              <div class="bd-callout bd-callout-warning">
+                                <code>Адаптивная верстка в большом примере</code>
+                                <br>
+                                <a href="https://www.youtube.com/watch?v=b8K_iowSriQ">Верстка ActiveBox макета</a>
+                                <br>
+                                * Дополни свой макет, сделав видео 5-8 из этого плейлиста и присылай мне
+                            </div>
+                                <div class="bd-callout bd-callout-warning">
+                                    Верстай <code>макет</code> <a href="https://www.figma.com/file/5D9pDuLtS042hzaoN69Kd7/Free--Landing--Page-Template?node-id=0%3A1">отсюда</a>, не забывай про мобильную версию, не делай гамбургер меню и выкладывай сверстанное на <code>GIT</code>.
+                                </div>
+                                    <a type="button" href="https://t.me/denis_holubchikov" class="btn btn-outline-primary">Send solution <i class="fas fa-upload"></i></a>
+                                  </a>
+                                
+                                </li>
+                                <li class="list-group-item list-group-footer row">
+                                    <div class="col-8 col-md-6 time-line date-expiring"><span>Сдать до <code>12.00 2 августа</code></span></div>
+                                    <div class="col-2 col-md-2 mark-line"><button type="button" class="btn btn-warning">700 баллов</button></div>
+                                    <div class="col-2 col-md-4 difficulty">
+                                        <span class="fs-5">Difficulty:</span>
+                                        <div _ngcontent-emw-c139="" class="difficulty-line medium ng-star-inserted"><span _ngcontent-emw-c139="" class="difficulty-line__item low"></span><span _ngcontent-emw-c139="" class="difficulty-line__item medium"></span><span _ngcontent-emw-c139="" class="difficulty-line__item high"></span></div>
+                                    </div>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane overflow-auto fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <div class="tab-content-inner">
+                    <h3 class="faq-heading text-center">Рейтинг: </h3>
+                    <div class="progress-items">
+                      <div class="progress-bar__cover">
+                        <div class="progress progress-custom">
+                          <span>Владислав</span>
+                          <img src="./images/vladislav.png">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFirst" aria-expanded="false" aria-controls="collapseFirst">0%</div>
+                        </div>
+                        <div class="collapse" id="collapseFirst">
+                          <div class="card card-body card-bar">
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0
+                            </div>
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-bar__cover">
+                        <div class="progress progress-custom">
+                          <span>Анастасия</span>
+                          <img src="./images/anastasia.png">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSecond" aria-expanded="false" aria-controls="collapseSecond">0%</div>
+                        </div>
+                        <div class="collapse" id="collapseSecond">
+                          <div class="card card-body card-bar">
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0
+                            </div>
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0</div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="progress-bar__cover">
+                        <div class="progress progress-custom">
+                          <span>Владислав</span>
+                          <img src="./images/profile.png">
+                          <div class="progress-bar bg-warning" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThird" aria-expanded="false" aria-controls="collapseThird">0%</div>
+                        </div>
+                        <div class="collapse" id="collapseThird">
+                          <div class="card card-body card-bar">
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0
+                            </div>
+                            <div class="card-task-item">0</div>
+                            <div class="card-task-item">0</div>
+                          </div>
+                        </div>
+                      </div>                               
+                    </div>
+                    <br>
+                  </div>
+              </div>
+              <div class="tab-pane overflow-auto fade" id="v-pills-questions" role="tabpanel" aria-labelledby="v-pills-questions-tab">
+                  <div class="tab-content-inner">
+                    <h3 class="faq-heading text-center">ОТВЕТЫ НА САМЫЕ ПОПУЛЯРНЫЕ ВОПРОСЫ:</h3>
+                    <div class="accordion accordion-flush accordion-area" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                                Для чего нужна данная группа?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Здесь ты будешь получать задание, а также можешь свободно обсуждать выполнение задания с другими участниками.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Когда будет первое задание?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Первое задание я выложу здесь <code>в 00.00 4 августа.</code></div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                У нас будет только онлайн обучение?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Обучение будет поделено на 2 этапа - онлайн и оффлайн.
+                                Онлайн этап продлится 3 недели с 4 августа по 25 августа, а после еще на 1.5 недели в сентябре.
+                                Оффлайн этап будет с 25 августа по 28 августа в ФИМЛИ.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                Для чего нужна такая подготовка?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Преподавать детям - штука непростая, а тем более преподавать программирование современным детям. 
+                                Ты должен быть уверен, что дал ребенку максимум знаний, которые он готов принять, а потому ты должен знать чуть больше этого максимума.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Что будет, если я не сдал вовремя д/з?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">С тебя будут сниматься виртуальные баллы. Трижды не сданное вовремя д/з - и я буду вынужден исключить тебя из группы.
+                                Если же ты получил предупреждение о несданном д/з - у тебя есть время “безболезненно” сдать задание до конца этого дня.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSix">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                Кто будет проверять задание?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Задание буду проверять я.
+                                Меня зовут Денис и я - embedded software developer. Пишу на чистом С и Python.
+                                Однако долгое время был Full Stack Developer, а потому знаю о чем говорю.
+                                В проекте KFund School - я методист наших образовательных курсов по IT.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSeven">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                Сколько мне нужно времени на выполнение задания?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">В первые недели на изучение материала и выполнение задания тебе понадобится от 3 до 5 часов.
+                                В последнюю же неделю - будет проект побольше, а потому стоит уделить ему до 10 часов в неделю.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingEight">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                Где я еще могу использовать полученные знания?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Преподавание Front-End - сейчас одно из самых востребованных направлений в обучении программированию, однако - это не главное.
+                                Если ты захочешь, то приложив усилия - ты можешь отправиться на стажировку
+                                в IT-компанию, как это сделал один из наших преподавателей в этом году.</div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingNine">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                Какой порядок действий будет после обучений?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Ты получишь все задания, материалы, презентации для детей.
+                                Я расскажу о том, как у нас будет построен учебный процесс и о том, как пользоваться LMS-системой. Да-да, это не опечатка - у нас действительно будет LMS-система.
+                                Затем нужно будет подписать договор. И после, с середины сентября - отправиться преподавать детям.</div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="chat-widget" onClick="parent.location='https://t.me/joinchat/vlhgKwBH0M82ZWVi'">
+        <i class="far fa-comment-alt"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
